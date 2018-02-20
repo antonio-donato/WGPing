@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Net.NetworkInformation;
 
-namespace WGPing
+namespace WGPing.Client
 {
-    public class WGPing
+    public class WGClient
     {
-        public WGPing()
+        public WGClient()
         {
         }
 
+        //Restituisco un bool true se riesco a pingare il server chiamato
         public static bool PingHost(String nameOrAddress)
         {
             bool pingable = false;
